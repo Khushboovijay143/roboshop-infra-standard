@@ -23,7 +23,7 @@ pipeline {
                 input 'Shall I apply'
             }
         }
-         stage('Deploy') {
+         stage('Deploy-1') {
             steps {
                 sh '''
                     cd 1-vpc
