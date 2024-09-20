@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "./modules/terraform-module-vpc-advanced"
+  source = "git::https://github.com/Khushboovijay143/terraform/tree/main/terraform-module-vpc-advanced.git"
   project_name = var.project_name #"roboshop" instead of hard coding we are keeping in variables.tf
   cidr_block = var.cidr_block
   common_tags = var.common_tags
