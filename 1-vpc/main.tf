@@ -1,6 +1,5 @@
 module "vpc" {
-  #source = "/terrafrom/terraform-module-vpc-advanced"
-  source = "/terraform/tree/main/terraform-module-vpc-advanced"
+  source = "./modules/terraform-module-vpc-advanced"
   project_name = var.project_name #"roboshop" instead of hard coding we are keeping in variables.tf
   cidr_block = var.cidr_block
   common_tags = var.common_tags
